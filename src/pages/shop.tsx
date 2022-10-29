@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (
 ) => {
   const { host } = context.req.headers;
   try {
-    const response = await fetch(`http://${host}/api/shop`);
+    const response = await fetch(`https://${host}/api/shop`);
     const products = (await response.json()) as ProductEntity[];
     return {
       props: { products, host },
@@ -66,7 +66,7 @@ export default function Shop(props: ShopProps) {
                 onClick={async () => {
                   setShowBackdrop(true);
                   const session = await fetch(
-                    `http://${props.host}/api/payment`,
+                    `https://${props.host}/api/payment`,
                     {
                       method: "POST",
                       headers: {
