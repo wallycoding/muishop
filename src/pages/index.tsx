@@ -38,7 +38,7 @@ export default function Shop(props: ShopProps) {
     <Container>
       <Head>
         <title>MUIshop | Shop</title>
-        <meta name="description" content="MUIshop Description." />
+        <meta name="description" content="MUIshop your best choice for hardware." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

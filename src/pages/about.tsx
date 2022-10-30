@@ -29,7 +29,7 @@ export default function About() {
     <Container>
       <Head>
         <title>MUIshop | About</title>
-        <meta name="description" content="MUIshop Description." />
+        <meta name="description" content="MUIshop about project." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
