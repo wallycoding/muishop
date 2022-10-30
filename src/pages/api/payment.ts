@@ -16,8 +16,8 @@ export default async function handler(
       },
     ],
     mode: "payment",
-    success_url: `http://${host}/`,
-    cancel_url: `http://${host}/shop`,
+    success_url: `https://${host}/`,
+    cancel_url: `https://${host}/`,
   });
 
   res.json(session);

@@ -13,7 +13,6 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import HomeIcon from "@mui/icons-material/HomeOutlined";
 import ShopIcon from "@mui/icons-material/ShopOutlined";
 import AboutIcon from "@mui/icons-material/InfoOutlined";
 
@@ -45,14 +44,6 @@ const Header = () => {
         >
           <MenuItem>
             <Link href="/">
-              <CustomLink>
-                <HomeIcon />
-                Home
-              </CustomLink>
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/shop">
               <CustomLink>
                 <ShopIcon />
                 Shop
@@ -91,9 +82,6 @@ const Header = () => {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: 2 }}>
             <Link href="/">
-              <CustomLink>Home</CustomLink>
-            </Link>
-            <Link href="/shop">
               <CustomLink>Shop</CustomLink>
             </Link>
             <Link href="/about">
